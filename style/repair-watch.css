@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+  
+  
+  }
+  :root{
+    --white:#fff;
+    --d6d6d6:#d6d6d6;
+    --main-color:hsl(5, 85%, 63%);
+  }
+  .home .home-text p{
+    color: var(--d6d6d6);
+    font-size: 17px;
+}
+
+button{
+    padding: 15px 40px;
+    align-self: center;
+    margin-top: 40px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700; 
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+button:hover a{
+    
+    color:  var(--main-color);
+}
+button:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+
+.repair{
+    width: 100%;
+    min-height: 1000px;
+    position: relative;
+}
+.background-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video-back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+}
+  .background-video::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.527);
+
+  }
+  .description{
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#00000071;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    padding: 40px;
+    width: 60%;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 2;
+
+  }
+  .zin{
+    z-index: 1;
+  }
+  .zin2{
+    z-index: 0;
+  }
+  .description p{
+    color: var(--d6d6d6);
+    line-height: 25px;
+    font-size: 17px;
+  }
+  .description h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--white);
+  }
+  .description button{
+    padding: 15px 40px;
+    align-self: center;
+    margin-top: 40px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700; 
+    cursor: pointer;
+  }
+  .description button:hover{
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+  }
+
+  /* ////////////////////////////////////// */
+  .modil{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+
+}
+.modil .close{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--d6d6d6);
+    cursor:pointer;
+}
+.content{
+    width: 60%;
+    height: 60%;
+    background-color: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+/* Style inputs */
+input[type=text], select, textarea,  input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--d6d6d6);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: var(--white);
+    color: var(--main-color);
+    padding: 12px 20px;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-image: url(../image/backgrounds/Repair.jpg);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+.column::before {
+  content:"";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.493);
+  position: absolute;
+  z-index: 1;
+}
+  .column2 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .description{
+      width: 80%;
+    }
+    .modil{
+      flex-direction: column;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  .content{
+    width: 70%;
+    height: 80%;
+    background-color: var(--white);
+    border-radius: 15px;
+    overflow: auto;
+    margin-top: 50px;
+
+}
+  .button{
+    margin-bottom: 20px;
+  }
+.column {
+    width: 100%;
+    height: 50%;
+  }
+  .column2 {
+    width: 100%;
+    height: 50%;
+    margin-top: 6px;
+    padding: 20px;
+
+  }
+  .description p{
+    color: var(--d6d6d6);
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .description h2{
+    font-size: 20px;  
+  }
+  
+  }

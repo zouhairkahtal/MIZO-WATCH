@@ -1,0 +1,180 @@
+:root {
+  --white: #fff;
+  --d6d6d6: #969696;
+  --main-color: hsl(5, 85%, 63%);
+}
+
+button {
+  padding: 15px 40px;
+  align-self: center;
+  margin-top: 40px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+button:hover a {
+  color: var(--main-color);
+}
+.consultation {
+  width: 100%;
+  min-height: 800px;
+  height: 100vh;
+  background-image: url(../image/backgrounds/businessman-checking-time-hand-watch.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.consultation::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  background-color: rgba(3, 3, 3, 0.527);
+  z-index: 1;
+}
+.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00000071;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 40px;
+  width: 60%;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 2;
+}
+.description p {
+  color: var(--d6d6d6);
+  line-height: 25px;
+  font-size: 17px;
+}
+.description h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--white);
+}
+.description button {
+  padding: 15px 40px;
+  align-self: center;
+  margin-top: 40px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.description button:hover {
+  border: 1px solid var(--main-color);
+  background-color: transparent;
+}
+.con-info {
+  background-color: var(--d6d6d6);
+  width: 100%;
+  height: 855px;
+  display: flex;
+}
+.location {
+  background-color: var(--main-color);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+iframe {
+  width: 80%;
+}
+.info {
+  background-color: var(--white);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 40px;
+}
+.info h2{
+  padding: 40px 0;
+  position: relative;
+  color: var(--d6d6d6);
+}
+.info h2::after{
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 5px;
+  left: 0;
+  bottom: 22px;
+  
+  background-color: var(--main-color);
+  transform: scaleX(0);
+  transition: 300ms;
+  transform-origin: left;
+}
+.info h2:hover::after{
+  transform: scaleX(1);
+}
+@media (max-width: 800px) {
+  .con-info {
+    background-color: var(--d6d6d6);
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+  }
+  .location {
+    width: 100%;
+    height: 50%;
+  }
+  iframe {
+    width: 80%;
+    height: 80%;
+  }
+  .info {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .description {
+    width: 80%;
+  }
+
+  .description p {
+
+    font-size: 15px;
+  }
+  .description h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 970px) {
+  .info{
+    align-items: center;
+  }
+  .info h2{
+    padding: 30px 0;
+    position: relative;
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .info{
+    align-items: start;
+  }
+}
