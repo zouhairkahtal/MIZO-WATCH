@@ -29,7 +29,54 @@ let data = [
     price: "$1200",
     info: "High-end luxury watch with automatic movement and sapphire crystal glass.",
   },
-
+  {
+    title: "Sport Watch",
+    img: "../image/products/Sport Watch.jpg",
+    price: "$200",
+    info: "Durable sport watch with GPS tracking and water-resistant up to 50 meters.",
+  },
+  {
+    title: "Hybrid Watch",
+    img: "../image/products/Hybrid Watch.jpg",
+    price: "$180",
+    info: "Combination of analog and digital watch with smart notifications and fitness tracking.",
+  },
+  {
+    title: "Diving Watch",
+    img: "../image/products/Diving Watch.jpg",
+    price: "$500",
+    info: "Professional diving watch with helium escape valve and 1000 meters water resistance.",
+  },
+  {
+    title: "Kids Watch",
+    img: "../image/products/kids watch.jpg",
+    price: "$30",
+    info: "Colorful and durable watch for kids with educational games and parental controls.",
+  },
+  {
+    title: "Minimalist Watch",
+    img: "../image/products/minimalist watch.jpg",
+    price: "$75",
+    info: "Stylish minimalist watch with clean design and high-quality materials.",
+  },
+  {
+    title: "Fashion Watch",
+    img: "../image/products/fashion watch.jpg",
+    price: "$250",
+    info: "Trendy fashion watch with interchangeable straps and multiple color options.",
+  },
+  {
+    title: "Solar Watch",
+    img: "../image/products/solar watch.jpg",
+    price: "$220",
+    info: "Eco-friendly solar watch that charges with sunlight and has long-lasting battery life.",
+  },
+  {
+    title: "Military Watch",
+    img: "../image/products/military watch.jpg",
+    price: "$350",
+    info: "Tough military watch with compass, altimeter, and rugged design for extreme conditions.",
+  }
 ];
 
 function fillData() {
