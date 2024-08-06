@@ -84,7 +84,7 @@ function fillData() {
   
   for (let task of data) {
     let content = `
-      <div class="card">
+      <div class="card"> 
         <img src="${task.img}" alt="Product Image">
         <h1>${task.title}</h1>
         <p class="price">${task.price}</p>
