@@ -58,24 +58,6 @@ let data = [
     img: "../image/products/minimalist watch.jpg",
     price: "$75",
     info: "Stylish minimalist watch with clean design and high-quality materials.",
-  },
-  {
-    title: "Fashion Watch",
-    img: "../image/products/fashion watch.jpg",
-    price: "$250",
-    info: "Trendy fashion watch with interchangeable straps and multiple color options.",
-  },
-  {
-    title: "Solar Watch",
-    img: "../image/products/solar watch.jpg",
-    price: "$220",
-    info: "Eco-friendly solar watch that charges with sunlight and has long-lasting battery life.",
-  },
-  {
-    title: "Military Watch",
-    img: "../image/products/military watch.jpg",
-    price: "$350",
-    info: "Tough military watch with compass, altimeter, and rugged design for extreme conditions.",
   }
 ];
 
@@ -84,7 +66,7 @@ function fillData() {
   
   for (let task of data) {
     let content = `
-      <div class="card"> 
+      <div class="card">
         <img src="${task.img}" alt="Product Image">
         <h1>${task.title}</h1>
         <p class="price">${task.price}</p>
