@@ -47,18 +47,18 @@ let data = [
     price: "$500",
     info: "Professional diving watch with helium escape valve and 1000 meters water resistance.",
   },
-  {
-    title: "Kids Watch",
-    img: "../image/products/kids watch.jpg",
-    price: "$30",
-    info: "Colorful and durable watch for kids with educational games and parental controls.",
-  },
-  {
-    title: "Minimalist Watch",
-    img: "../image/products/minimalist watch.jpg",
-    price: "$75",
-    info: "Stylish minimalist watch with clean design and high-quality materials.",
-  }
+  // {
+  //   title: "Kids Watch",
+  //   img: "../image/products/kids watch.jpg",
+  //   price: "$30",
+  //   info: "Colorful and durable watch for kids with educational games and parental controls.",
+  // },
+  // {
+  //   title: "Minimalist Watch",
+  //   img: "../image/products/minimalist watch.jpg",
+  //   price: "$75",
+  //   info: "Stylish minimalist watch with clean design and high-quality materials.",
+  // }
 ];
 
 function fillData() {
