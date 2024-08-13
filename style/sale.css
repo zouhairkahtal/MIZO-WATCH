@@ -5,7 +5,7 @@
   }
   
 
- .description button{
+  button{
     padding: 15px 40px;
     align-self: center;
     margin-top: 40px;
@@ -13,6 +13,7 @@
     border-radius: 20px;
     font-weight: 700; 
     cursor: pointer;
+    border-radius: 0;
 }
 a{
     text-decoration: none;
@@ -47,10 +48,7 @@ a{
     z-index: 1;
   }
   .description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
     background-color: #00000071;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
       rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -151,4 +149,31 @@ a{
     color: var(--white);
     background-color: var(--main-color);
 
+  }
+
+  @media (max-width: 500px){
+    .description {
+      width: 80%;
+    }
+    .description h2 {
+      font-size: 25px;
+      font-weight:bolder;
+      color: var(--white);
+    }
+
+    .card {
+      max-width: 250px;
+      height: 500px;
+        }
+    .card img{
+      max-width: 200px;
+      height: 200px;
+    }
+    
+    .price {
+      color: var(--d6d6d6);
+      font-size: 22px;
+      padding: 20px;
+    }
+    
   }
