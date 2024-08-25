@@ -63,7 +63,7 @@ let data = [
 
 function fillData() {
   document.getElementById("data").innerHTML = "";
-  
+
   for (let task of data) {
     let content = `
       <div class="card">

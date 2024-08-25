@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/style-nav.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="../style/repair-watch.css" />
     <title>repair-watch</title>
   </head>
@@ -49,8 +52,12 @@
           </li>
           <li class="hideOnMobile"><a href="../index.html#Home">Home</a></li>
           <li class="hideOnMobile"><a href="../index.html#About">About</a></li>
-          <li class="hideOnMobile"><a href="../index.html#Services">Services</a></li>
-          <li class="hideOnMobile"><a href="../index.html#Contact">Contact</a></li>
+          <li class="hideOnMobile">
+            <a href="../index.html#Services">Services</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="../index.html#Contact">Contact</a>
+          </li>
           <li class="menuBTN" onclick="showSidebar()">
             <button class="menu-btn menu-btn-2">
               <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +83,7 @@
         <div class="description">
           <h2>The importance of precision and skill in time making</h2>
           <p>
-            Watch repair includes diagnosing faults, disassembling and cleaning 
+            Watch repair includes diagnosing faults, disassembling and cleaning
             parts, and replacing damaged ones. It is reassembled and lubricated,
             then the watch is calibrated to set the precise time. The watch is
             tested to ensure proper performance, and finally cleaned and packed
@@ -85,33 +92,46 @@
           <button id="btn"><a href="#"> Enter your information</a></button>
         </div>
       </div>
-      <div class="modil" id="the_modil">  
+      <div class="modil" id="the_modil">
         <span class="close">&times;</span>
         <div class="content">
-          <div class="column">
-          </div>
+          <div class="column"></div>
           <div class="column2">
             <form action="/action_page.php">
               <label for="fname">full name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
               <label for="Email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your email..">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email.."
+              />
               <label for="country">Country</label>
               <select id="country" name="country">
                 <option value="australia">Australia</option>
                 <option value="canada">Canada</option>
                 <option value="usa">USA</option>
-                  <option value="usa">MOROCCO</option>
+                <option value="usa">MOROCCO</option>
               </select>
               <label for="subject">Watch Info</label>
-              <textarea id="Info" name="info" placeholder="Write information About watch.." ></textarea>
-              <input class="button" type="submit" value="Submit">
+              <textarea
+                id="Info"
+                name="info"
+                placeholder="Write information About watch.."
+              ></textarea>
+              <input class="button" type="submit" value="Submit" />
             </form>
           </div>
         </div>
-    </div>
+      </div>
     </section>
-  <script src="../scripts/script.js"></script>
-  <script src="../scripts/repair-script.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/repair-script.js"></script>
   </body>
 </html>

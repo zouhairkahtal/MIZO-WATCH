@@ -108,25 +108,25 @@ iframe {
   justify-content: center;
   padding-left: 40px;
 }
-.info h2{
+.info h2 {
   padding: 40px 0;
   position: relative;
   color: var(--d6d6d6);
 }
-.info h2::after{
+.info h2::after {
   position: absolute;
   content: "";
   width: 150px;
   height: 5px;
   left: 0;
   bottom: 22px;
-  
+
   background-color: var(--main-color);
   transform: scaleX(0);
   transition: 300ms;
   transform-origin: left;
 }
-.info h2:hover::after{
+.info h2:hover::after {
   transform: scaleX(1);
 }
 @media (max-width: 800px) {
@@ -156,7 +156,6 @@ iframe {
   }
 
   .description p {
-
     font-size: 15px;
   }
   .description h2 {
@@ -164,18 +163,18 @@ iframe {
   }
 }
 @media (max-width: 970px) {
-  .info{
+  .info {
     align-items: center;
     padding-left: 0;
   }
-  .info h2{
+  .info h2 {
     padding: 30px 0;
     position: relative;
     font-size: 20px;
   }
 }
 @media (max-width: 400px) {
-  .info{
+  .info {
     align-items: start;
   }
 }

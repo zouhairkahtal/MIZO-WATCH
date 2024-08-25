@@ -1,31 +1,32 @@
-footer{
-    width: 100%;
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url(../image/backgrounds/offer-background.jpg);
-    background-position: center;
+footer {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../image/backgrounds/offer-background.jpg);
+  background-position: center;
 }
-.cen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
+.cen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
 }
-.a-logo{
-     margin-bottom: 20px;
+.a-logo {
+  margin-bottom: 20px;
 }
-.a-logo svg path{
-    fill: var(--white);
+.a-logo svg path {
+  fill: var(--white);
 }
-.footer-p, .copy-right{
-    padding: 20px 0;
-    color: var(--white);
+.footer-p,
+.copy-right {
+  padding: 20px 0;
+  color: var(--white);
 }
-.social-icon{
-    display: flex;
-    width: 200px;
-    justify-content: space-between;
+.social-icon {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
 }

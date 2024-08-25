@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/style-nav.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../style/sale.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="../style/sale.css" />
     <title>products</title>
   </head>
   <body>
@@ -49,8 +52,12 @@
           </li>
           <li class="hideOnMobile"><a href="../index.html#Home">Home</a></li>
           <li class="hideOnMobile"><a href="../index.html#About">About</a></li>
-          <li class="hideOnMobile"><a href="../index.html#Services">Services</a></li>
-          <li class="hideOnMobile"><a href="../index.html#Contact">Contact</a></li>
+          <li class="hideOnMobile">
+            <a href="../index.html#Services">Services</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="../index.html#Contact">Contact</a>
+          </li>
           <li class="menuBTN" onclick="showSidebar()">
             <button class="menu-btn menu-btn-2">
               <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
@@ -64,23 +71,22 @@
         </ul>
       </nav>
     </header>
-    
-    <section onclick="closeSidebar()" class="info-products">
-        <div class="description">
-            <h2>The importance of precision and skill in time making</h2>
-            <p>
-              Offer a variety of watches for sale. These watches can be new or used, and of various brands and styles.
-            </p>
-            <button class=".button" id="btn">
-              <a href="#data">More Info</a>
-            </button>
-          </div>
-    </section >
-    <h2  class="title">Product</h2>
-    <section onclick="closeSidebar()" class="products"  id="data">  
 
+    <section onclick="closeSidebar()" class="info-products">
+      <div class="description">
+        <h2>The importance of precision and skill in time making</h2>
+        <p>
+          Offer a variety of watches for sale. These watches can be new or used,
+          and of various brands and styles.
+        </p>
+        <button class=".button" id="btn">
+          <a href="#data">More Info</a>
+        </button>
+      </div>
     </section>
-  <script src="../scripts/script.js"></script>
-  <script src="../scripts/sale.js"></script>
+    <h2 class="title">Product</h2>
+    <section onclick="closeSidebar()" class="products" id="data"></section>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/sale.js"></script>
   </body>
 </html>
